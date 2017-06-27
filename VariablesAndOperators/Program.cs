@@ -73,10 +73,56 @@ namespace VariablesAndOperators
             int cupsOfSugarNeeded = totalCups - lisaHasThisManyCups;
             Console.WriteLine(cupsOfSugarNeeded);
             // My Client Needs Receipts
-            // Donations come in 1s,5s, 10s, 20s, 50s, 100s, and quarters
+            // Donations come in 1s,5s, 10s, 20s, 50s, 100s, and quarters -check
             //Ask user how many donations are being made?
             //Print receipt
             //Client wants specific info printed: Name, Address, Email, Donation Amount
+
+            Console.WriteLine("Welcome to your personal donation tracker!");
+            Console.WriteLine("Enter in your information as prompted");
+            Console.WriteLine("How many 1's would you like to donate?");
+            float numberOfOnes = float.Parse(Console.ReadLine());
+            float ones = numberOfOnes* 1;
+            Console.WriteLine("How many 5's would you like to donate?");
+            float numberOfFives = float.Parse(Console.ReadLine());
+            float fives = numberOfFives * 5;
+            Console.WriteLine("How many 10's would you like to donate?");
+            float numberOfTens = float.Parse(Console.ReadLine());
+            float tens = numberOfTens * 10;
+            Console.WriteLine("How many 20's would you like to donate?");
+            float numberOfTwenties = float.Parse(Console.ReadLine());
+            float twenties = numberOfTwenties * 20;
+            Console.WriteLine("How many 50's would you like to donate?");
+            float numberOfFifties = float.Parse(Console.ReadLine());
+            float fifties = numberOfFifties * 50;
+            Console.WriteLine("How many 100's would you like to donate?");
+            float numberOfHundreds = float.Parse(Console.ReadLine());
+            float hundreds = numberOfHundreds * 100;
+            Console.WriteLine("How many quarters would you like to donate?");
+            float numberOfQuarters = float.Parse(Console.ReadLine());
+            float quarters = numberOfQuarters * .25f;
+            Console.WriteLine("How many donations are being made?");
+
+            Console.WriteLine("What is your name?");
+            string clientName = Console.ReadLine();
+            Console.WriteLine("What is your Address?");
+            string clientAddress = Console.ReadLine();
+            Console.WriteLine("What is your Email?");
+            string clientEmail = Console.ReadLine();
+            float totalDonationAmount = numberOfOnes + numberOfFives + numberOfTens + numberOfTwenties + numberOfFifties + numberOfHundreds + numberOfQuarters;
+            Console.WriteLine("/n Your Donation Amount Is: $"+totalDonationAmount);
+            Console.WriteLine("Name: "+clientName);
+            Console.WriteLine("Address: " +clientAddress);
+            Console.WriteLine("Email: " +clientEmail);
+
+
+
+
+
+
+
+
+
 
 
 
