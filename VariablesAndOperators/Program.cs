@@ -53,7 +53,7 @@ namespace VariablesAndOperators
             //to date we have no user. Let's add some addt'l features to make sure we can receive user input
             //here we are creating a variable to take in user information
 
-            Console.WriteLine("What is the name on the reservation?");
+            Console.WriteLine("Welcome! What is the name on the reservation?");
             string reserveName = Console.ReadLine();
 
             Console.WriteLine("And how many people are in your party?");
@@ -83,49 +83,87 @@ namespace VariablesAndOperators
             Console.WriteLine("How many 1's would you like to donate?");
             float numberOfOnes = float.Parse(Console.ReadLine());
             float ones = numberOfOnes* 1;
+            //
             Console.WriteLine("How many 5's would you like to donate?");
             float numberOfFives = float.Parse(Console.ReadLine());
             float fives = numberOfFives * 5;
+            //
             Console.WriteLine("How many 10's would you like to donate?");
             float numberOfTens = float.Parse(Console.ReadLine());
             float tens = numberOfTens * 10;
+            //
             Console.WriteLine("How many 20's would you like to donate?");
             float numberOfTwenties = float.Parse(Console.ReadLine());
             float twenties = numberOfTwenties * 20;
+            //
             Console.WriteLine("How many 50's would you like to donate?");
             float numberOfFifties = float.Parse(Console.ReadLine());
             float fifties = numberOfFifties * 50;
+            //
             Console.WriteLine("How many 100's would you like to donate?");
             float numberOfHundreds = float.Parse(Console.ReadLine());
             float hundreds = numberOfHundreds * 100;
+            //
             Console.WriteLine("How many quarters would you like to donate?");
             float numberOfQuarters = float.Parse(Console.ReadLine());
             float quarters = numberOfQuarters * .25f;
+            //
             Console.WriteLine("How many donations are being made?");
-
             Console.WriteLine("What is your name?");
             string clientName = Console.ReadLine();
             Console.WriteLine("What is your Address?");
             string clientAddress = Console.ReadLine();
             Console.WriteLine("What is your Email?");
+
             string clientEmail = Console.ReadLine();
             float totalDonationAmount = numberOfOnes + numberOfFives + numberOfTens + numberOfTwenties + numberOfFifties + numberOfHundreds + numberOfQuarters;
-            Console.WriteLine("/n Your Donation Amount Is: $"+totalDonationAmount);
+            Console.WriteLine("Your Donation Amount Is: $"+totalDonationAmount);
             Console.WriteLine("Name: "+clientName);
             Console.WriteLine("Address: " +clientAddress);
             Console.WriteLine("Email: " +clientEmail);
 
+            //Wednesday June, 28 2017
+            //Swimmers TShirt Exercise
+            
+            //T-Shirts Cost 
+            double superSwim = 15;
+            double beTheShark = 17.5;
+            double babyBubbles = 4.75;
+            
+            //Number of T-Shirts Desired
+            Console.WriteLine("How many Super Swim shirts would you like to purchase?");
+            double superSwimAmountDesired = double.Parse(Console.ReadLine());
+            Console.WriteLine("How many Be the Shark shirts would you like to purchase?");
+            double beTheSharkAmountDesired = double.Parse(Console.ReadLine());
+            Console.WriteLine("How many Baby Bubbles shirts would you like to purchase?");
+            double babyBubblesAmountDesired = double.Parse(Console.ReadLine());
 
+            //Calculations Cost * Number of Desired Shirts
+            double superSwimTotal = superSwimAmountDesired * superSwim;
+            double beTheSharkTotal = beTheSharkAmountDesired * beTheShark;
+            double babyBubblesTotal = babyBubblesAmountDesired * babyBubbles;
 
+            //Calculations Totaled
+            double tax = .8;
+            double subTotal = superSwimTotal + beTheSharkTotal + babyBubblesTotal;
+            double subTotalTimesTax = subTotal * tax;
+            double grandTotal = subTotal + subTotalTimesTax;
 
-
-
-
-
-
-
-
-
+            //Printing Information To Customer
+            Console.WriteLine("Your grand total is :" + grandTotal + "Thank you for your purchase! Have a great day!");
+            //intro
+            //cost of each is 
+            //how many does customer want
+            //get user input
+            //how many tshirts by does user wish to purchase
+            //get their input
+            //math
+            //get total number of shirts sold usinf additioin
+            // get subtotal using * and +
+            //then get the grand total
+            //print receipt
+            //thank your customer
+     
         }
     }
 }
